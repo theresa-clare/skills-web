@@ -13,6 +13,7 @@
 <html>
 
 <head>
+	<link rel="stylesheet" href="styles.css"></a>
 	<title>Application Form</title>
 </head>
 
@@ -20,17 +21,17 @@
 	<h1>Application Form</h1>
 	<p>Fill out this application form to the best of your ability.</p>
 	<form action="/application" method="POST">
-		First name:<input type="text" id="firstname"></input>
-		Last name:<input type="text" id="lastname"></input>
-		Salary requirement:<input type="text" id="salary"></input>
+		First name:<input type="text" class="input" id="firstname"></input>
+		Last name:<input type="text" class="input" id="lastname"></input>
+		Salary requirement:<input class="input" type="text" id="salary"></input>
 		Which job are you applying for?
-		<select name="job">
+		<select name="job" class="input">
 			<option value="software-engineer">Software Engineer</option>
 			<optino value="QA-engineer">QA Engineer</option>
 			<option value="product-manager">Product Manager</option>
 		</select>
+		<input type="submit" class="input">
 	</form>
-	<input type="submit">
 </body>
 
 </html>

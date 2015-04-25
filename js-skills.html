@@ -98,6 +98,12 @@
 
 <script>
   // code here for above problem
+  var button = document.getElementById("popup-alert-button");
+  function alertClick() {
+    alert("You just had to click the button, didn't you?")
+  }
+
+  button.addEventListener('click', alertClick);
 </script>
 
 

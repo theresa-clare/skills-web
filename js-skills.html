@@ -99,8 +99,9 @@
 <script>
   // code here for above problem
   var button = document.getElementById("popup-alert-button");
-  function alertClick() {
-    alert("You just had to click the button, didn't you?")
+  function alertClick(evt) {
+    alert("You just had to click the button, didn't you?");
+    console.dir(evt);
   }
 
   button.addEventListener('click', alertClick);
@@ -122,6 +123,16 @@
 
 <script>
   // code here for above-problem
+  var changeMessageButton = document.getElementById("change-hello-to-goodbye-button");
+  var message = document.getElementById("message-to-change");
+
+  function changeMessage(evt){
+    message.innerText = "goodbye";
+    console.dir(evt);
+  }
+
+  changeMessageButton.addEventListener('click', changeMessage);
+
 </script>
 
 <div class="hint">

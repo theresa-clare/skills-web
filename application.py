@@ -2,10 +2,22 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/application")
 def index_page():
     # Return this as a strange
-    return "<html><body>This is the homepage.</body></html>"
+    firstname = request.args.get("firstname")
+    lastname = request.args.get("lastname")
+    job = request.args.get("job")
+    salary = request.args.get("salary")
+
+    return """
+    <html>
+    <body>
+    	Thank you, {{ firstname }} {{ lastname}}, for applying to be a {{ job  }}.
+    	Your minimum salary requirement is {{ salary }} dollars.
+	</body>
+	</html>
+	"""
 
     # Alternately, we could make this a Jinja template in `templates/`
     # and return that result of rendering this, like:

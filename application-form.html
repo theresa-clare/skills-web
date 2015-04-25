@@ -1,0 +1,36 @@
+<!-- Ask the user:
+	Their first and last name (as separate fields),
+	Their salary requirements as a number, and
+	Which job they are applying for, from a list of:
+		Software Engineer
+		QA Engineer
+		Product Manager
+	It should also have a submit button that submits the form to the URL /application. This should be POST request.
+	It should have a large heading and some explanatory text. -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Application Form</title>
+</head>
+
+<body>
+	<h1>Application Form</h1>
+	<p>Fill out this application form to the best of your ability.</p>
+	<form action="/application" method="POST">
+		First name:<input type="text" id="firstname"></input>
+		Last name:<input type="text" id="lastname"></input>
+		Salary requirement:<input type="text" id="salary"></input>
+		Which job are you applying for?
+		<select name="job">
+			<option value="software-engineer">Software Engineer</option>
+			<optino value="QA-engineer">QA Engineer</option>
+			<option value="product-manager">Product Manager</option>
+		</select>
+	</form>
+	<input type="submit">
+</body>
+
+</html>

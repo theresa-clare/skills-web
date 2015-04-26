@@ -344,7 +344,10 @@
 </fieldset>
 
 <script>
-  // put your code here
+  $('#agreeable-form').submit(function (event) {
+    event.preventDefault();
+    $('#agreeable-text').html("I like " + $('#favorite-food-input').val() + ", too.")
+  });
 </script>
 
 <div class="hint">

@@ -241,11 +241,9 @@
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script>
-  function alertMe(){
+  $('.tricky-to-find').on('click', function(evt){
     alert("I thought I told you not to click me.");
-  }
-
-  $('.tricky-to-find').on('click', alertMe);
+  });
 </script>
 
 <div class="hint">

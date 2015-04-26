@@ -239,8 +239,13 @@
   <input type="button" class="tricky-to-find" value="Pop-Up Please!">
 </fieldset>
 
+<script src="https://code.jquery.com/jquery.js"></script>
 <script>
-  // code here for above problem
+  function alertMe(){
+    alert("I thought I told you not to click me.");
+  }
+
+  $('.tricky-to-find').on('click', alertMe);
 </script>
 
 <div class="hint">

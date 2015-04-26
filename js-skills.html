@@ -306,7 +306,13 @@
 </fieldset>
 
 <script>
-  // put your code here
+  function showPorcupine(evt){
+    $('#cute-porcupine-image').fadeIn(8000);
+  }
+
+  $('#make-a-porcupine').on('click', function(evt){
+    setTimeout(showPorcupine, 1000);
+  });
 </script>
 
 <div class="hint">
